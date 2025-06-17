@@ -51,7 +51,10 @@ struct LandmarkDetail: View {
             .padding()
         }
         .navigationTitle(landmark.name)
-        .navigationBarTitleDisplayMode(.inline)
+        
+    #if !os(macOS)
+        .navigationBarTitleDisplayMode(.inline)// Only added when not running on macOS
+    #endif
     }
 }
 
