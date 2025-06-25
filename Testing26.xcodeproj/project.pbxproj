@@ -6,20 +6,85 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		02CABBC62E0C0F9500C6F0FE /* WatchTesting26 Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 02CABBBC2E0C0F9400C6F0FE /* WatchTesting26 Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02CABBC42E0C0F9500C6F0FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 023D846F2E00AE91005E0993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02CABBBB2E0C0F9400C6F0FE;
+			remoteInfo = "WatchTesting26 Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02CABBB12E0C0F3600C6F0FE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				02CABBC62E0C0F9500C6F0FE /* WatchTesting26 Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		023D84772E00AE91005E0993 /* Testing26.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testing26.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02CABBBC2E0C0F9400C6F0FE /* WatchTesting26 Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchTesting26 Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		02CABBD62E0C102300C6F0FE /* Exceptions for "Testing26" folder in "WatchTesting26 Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Model/Hike.swift,
+				Model/Landmark.swift,
+				Model/ModelData.swift,
+				Model/Profile.swift,
+				Resources/hikeData.json,
+				Resources/landmarkData.json,
+				Testing26App.swift,
+				Views/Helper/CircleImage.swift,
+				Views/Helper/MapView.swift,
+				Views/Landmarks/LandmarkList.swift,
+				Views/Landmarks/LandmarkRow.swift,
+			);
+			target = 02CABBBB2E0C0F9400C6F0FE /* WatchTesting26 Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		023D84792E00AE91005E0993 /* Testing26 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				02CABBD62E0C102300C6F0FE /* Exceptions for "Testing26" folder in "WatchTesting26 Watch App" target */,
+			);
 			path = Testing26;
+			sourceTree = "<group>";
+		};
+		02CABBBD2E0C0F9400C6F0FE /* WatchTesting26 Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "WatchTesting26 Watch App";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		023D84742E00AE91005E0993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02CABBB92E0C0F9400C6F0FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				023D84792E00AE91005E0993 /* Testing26 */,
+				02CABBBD2E0C0F9400C6F0FE /* WatchTesting26 Watch App */,
 				023D84782E00AE91005E0993 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				023D84772E00AE91005E0993 /* Testing26.app */,
+				02CABBBC2E0C0F9400C6F0FE /* WatchTesting26 Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +122,12 @@
 				023D84732E00AE91005E0993 /* Sources */,
 				023D84742E00AE91005E0993 /* Frameworks */,
 				023D84752E00AE91005E0993 /* Resources */,
+				02CABBB12E0C0F3600C6F0FE /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				02CABBC52E0C0F9500C6F0FE /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				023D84792E00AE91005E0993 /* Testing26 */,
@@ -68,6 +137,28 @@
 			);
 			productName = Testing26;
 			productReference = 023D84772E00AE91005E0993 /* Testing26.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02CABBBB2E0C0F9400C6F0FE /* WatchTesting26 Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02CABBC72E0C0F9500C6F0FE /* Build configuration list for PBXNativeTarget "WatchTesting26 Watch App" */;
+			buildPhases = (
+				02CABBB82E0C0F9400C6F0FE /* Sources */,
+				02CABBB92E0C0F9400C6F0FE /* Frameworks */,
+				02CABBBA2E0C0F9400C6F0FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				02CABBBD2E0C0F9400C6F0FE /* WatchTesting26 Watch App */,
+			);
+			name = "WatchTesting26 Watch App";
+			packageProductDependencies = (
+			);
+			productName = "WatchTesting26 Watch App";
+			productReference = 02CABBBC2E0C0F9400C6F0FE /* WatchTesting26 Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -81,6 +172,9 @@
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					023D84762E00AE91005E0993 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					02CABBBB2E0C0F9400C6F0FE = {
 						CreatedOnToolsVersion = 26.0;
 					};
 				};
@@ -100,12 +194,20 @@
 			projectRoot = "";
 			targets = (
 				023D84762E00AE91005E0993 /* Testing26 */,
+				02CABBBB2E0C0F9400C6F0FE /* WatchTesting26 Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		023D84752E00AE91005E0993 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02CABBBA2E0C0F9400C6F0FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +224,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02CABBB82E0C0F9400C6F0FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02CABBC52E0C0F9500C6F0FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02CABBBB2E0C0F9400C6F0FE /* WatchTesting26 Watch App */;
+			targetProxy = 02CABBC42E0C0F9500C6F0FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		023D84802E00AE92005E0993 /* Debug */ = {
@@ -327,6 +444,71 @@
 			};
 			name = Release;
 		};
+		02CABBC82E0C0F9500C6F0FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2Z5VT54PS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchTesting26;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ivanterziev.Testing26;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ivanterziev.Testing26.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		02CABBC92E0C0F9500C6F0FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H2Z5VT54PS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchTesting26;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ivanterziev.Testing26;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ivanterziev.Testing26.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,6 +526,15 @@
 			buildConfigurations = (
 				023D84832E00AE92005E0993 /* Debug */,
 				023D84842E00AE92005E0993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02CABBC72E0C0F9500C6F0FE /* Build configuration list for PBXNativeTarget "WatchTesting26 Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02CABBC82E0C0F9500C6F0FE /* Debug */,
+				02CABBC92E0C0F9500C6F0FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
